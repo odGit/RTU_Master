@@ -1,0 +1,165 @@
+alyze.pl output80211_max0_p0.tr 
+AODV Sent		: 17330
+AODV Recv		: 84844
+Data Sent		: 32975
+Data Recv		: 20010
+Router Drop		: 12889
+Delivery Ratio		: 0.606823351023503 
+Norm. Routing Load   : 0.866066966516742 
+Number of entries read: 20070042
+Number of entries sent: 342772
+Number of entries received:  784995
+average delay of entries :  29.986219
+variance of  delay is :  27338.660710
+Average Throughput[kbps] = 92.13		 StartTime=10.29	StopTime=899.91
+
+
+alyze.pl output80211_max5_p0.tr 
+AODV Sent		: 107830
+AODV Recv		: 571622
+Data Sent		: 32897
+Data Recv		: 27177
+Router Drop		: 8009
+Delivery Ratio		: 0.826123962671368 
+Norm. Routing Load   : 3.96769327004452 
+Number of entries read: 64208693
+Number of entries sent: 726414
+Number of entries received:  1794186
+average delay of entries :  24.582625
+variance of  delay is :  17369.216760
+Average Throughput[kbps] = 125.12		 StartTime=10.29	StopTime=900.00
+
+
+alyze.pl output80211_max10_p0.tr 
+AODV Sent		: 104895
+AODV Recv		: 532520
+Data Sent		: 32987
+Data Recv		: 23394
+Router Drop		: 11390
+Delivery Ratio		: 0.709188468184436 
+Norm. Routing Load   : 4.48384201077199 
+Number of entries read: 55317658
+Number of entries sent: 587771
+Number of entries received:  1503128
+average delay of entries :  13.123167
+variance of  delay is :  16912.574213
+Average Throughput[kbps] = 107.70		 StartTime=10.29	StopTime=899.99
+
+
+alyze.pl output80211_max15_p0.tr 
+AODV Sent		: 193726
+AODV Recv		: 942028
+Data Sent		: 32823
+Data Recv		: 23350
+Router Drop		: 12649
+Delivery Ratio		: 0.711391402370289 
+Norm. Routing Load   : 8.29661670235546 
+Number of entries read: 92245222
+Number of entries sent: 922320
+Number of entries received:  2313872
+average delay of entries :  12.255087
+variance of  delay is :  17545.609931
+Average Throughput[kbps] = 107.50		 StartTime=10.29	StopTime=899.98
+
+
+alyze.pl output80211_max20_p0.tr 
+AODV Sent		: 151136
+AODV Recv		: 692364
+Data Sent		: 32918
+Data Recv		: 24989
+Router Drop		: 10864
+Delivery Ratio		: 0.759128744152136 
+Norm. Routing Load   : 6.04810116451239 
+Number of entries read: 71729837
+Number of entries sent: 769474
+Number of entries received:  1869325
+average delay of entries :  14.089052
+variance of  delay is :  18349.697147
+Average Throughput[kbps] = 115.04		 StartTime=10.29	StopTime=900.00
+
+
+DSR
+
+alyze_dsr.pl output80211_max0d_p0.tr 
+DSR Sent		: 7057
+DSR Recv		: 55054
+Data Sent		: 32848
+Data Recv		: 19970
+Router Drop		: 12877
+Delivery Ratio		: 0.607951777886021 
+Norm. Routing Load   : 0.353380070105158
+Number of entries read: 60419800
+Number of entries sent: 1068908
+Number of entries received:  1905590
+average delay of entries :  44.867883
+variance of  delay is :  28123.832214
+Average Throughput[kbps] = 91.94		 StartTime=10.29	StopTime=899.96
+
+
+alyze_dsr.pl output80211_max5d_p0.tr 
+DSR Sent		: 98015
+DSR Recv		: 340090
+Data Sent		: 32902
+Data Recv		: 27755
+Router Drop		: 4848
+Delivery Ratio		: 0.843565740684457 
+Norm. Routing Load   : 3.53143577733742 
+Number of entries read: 19268894
+Number of entries sent: 365939
+Number of entries received:  811228
+average delay of entries :  56.612295
+variance of  delay is :  44297.720478
+ -f athroughput.awk output80211_max5d_p0.tr 
+Average Throughput[kbps] = 127.85		 StartTime=10.29	StopTime=899.95
+
+
+alyze_dsr.pl output80211_max10d_p0.tr 
+DSR Sent		: 114166
+DSR Recv		: 380690
+Data Sent		: 32906
+Data Recv		: 24121
+Router Drop		: 8497
+Delivery Ratio		: 0.733027411414332 
+Norm. Routing Load   : 4.73305418514987 
+Number of entries read: 60471031
+Number of entries sent: 1050026
+Number of entries received:  1808225
+average delay of entries :  34.018989
+variance of  delay is :  29108.974799
+ -f athroughput.awk output80211_max10d_p0.tr 
+Average Throughput[kbps] = 111.06		 StartTime=10.29	StopTime=899.99
+
+
+alyze_dsr.pl output80211_max15d_p0.tr 
+DSR Sent		: 268995
+DSR Recv		: 772504
+Data Sent		: 24790
+Data Recv		: 13503
+Router Drop		: 9348
+Delivery Ratio		: 0.544695441710367 
+Norm. Routing Load   : 19.9211286380804 
+Number of entries read: 102826192
+Number of entries sent: 1723881
+Number of entries received:  2521215
+average delay of entries :  63.694177
+variance of  delay is :  30297.514512
+ -f athroughput.awk output80211_max15d_p0.tr 
+Average Throughput[kbps] = 81.02		 StartTime=10.29	StopTime=698.59
+
+
+alyze_dsr.pl output80211_max20d_p0.tr 
+DSR Sent		: 208753
+DSR Recv		: 603396
+Data Sent		: 32938
+Data Recv		: 22478
+Router Drop		: 8621
+Delivery Ratio		: 0.682433663246099 
+Norm. Routing Load   : 9.28699172524246 
+Number of entries read: 91505593
+Number of entries sent: 1621978
+Number of entries received:  2484213
+average delay of entries :  34.858857
+variance of  delay is :  31289.725215
+ -f athroughput.awk output80211_max20d_p0.tr 
+Average Throughput[kbps] = 103.67		 StartTime=10.29	StopTime=899.99
+

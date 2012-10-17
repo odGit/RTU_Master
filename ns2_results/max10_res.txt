@@ -1,0 +1,89 @@
+p0
+Average Throughput[kbps] = 123.89		 StartTime=10.29	StopTime=899.84
+AODV Sent		: 126376
+AODV Recv		: 662128
+Data Sent		: 32915
+Data Recv		: 26906
+Router Drop		: 8726
+Delivery Ratio		: 0.817438857663679 
+Norm. Routing Load   : 4.69694491934884 
+
+p30
+Average Throughput[kbps] = 109.75		 StartTime=10.29	StopTime=899.92
+AODV Sent		: 152927
+AODV Recv		: 724074
+Data Sent		: 32900
+Data Recv		: 23836
+Router Drop		: 12213
+Delivery Ratio		: 0.724498480243161 
+Norm. Routing Load   : 6.41579963081054 
+
+p45
+Average Throughput[kbps] = 117.88		 StartTime=10.29	StopTime=900.00
+AODV Sent		: 179649
+AODV Recv		: 856174
+Data Sent		: 32863
+Data Recv		: 25605
+Router Drop		: 11212
+Delivery Ratio		: 0.77914371785899 
+Norm. Routing Load   : 7.01616871704745 
+
+p60
+Average Throughput[kbps] = 100.00		 StartTime=10.29	StopTime=899.98
+AODV Sent		: 150100
+AODV Recv		: 670986
+Data Sent		: 32897
+Data Recv		: 21720
+Router Drop		: 13627
+Delivery Ratio		: 0.660242575310819 
+Norm. Routing Load   : 6.91068139963168
+
+p120
+Average Throughput[kbps] = 98.43		 StartTime=10.29	StopTime=899.99
+AODV Sent		: 125148
+AODV Recv		: 567190
+Data Sent		: 32814
+Data Recv		: 21381
+Router Drop		: 12846
+Delivery Ratio		: 0.651581641982081 
+Norm. Routing Load   : 5.85323417987933 
+
+p300
+Average Throughput[kbps] = 104.02		 StartTime=10.29	StopTime=899.93
+AODV Sent		: 117348
+AODV Recv		: 494540
+Data Sent		: 32894
+Data Recv		: 22594
+Router Drop		: 11382
+Delivery Ratio		: 0.686872985954885 
+Norm. Routing Load   : 5.1937682570594 
+
+p450
+Average Throughput[kbps] = 83.24		 StartTime=10.29	StopTime=899.99
+AODV Sent		: 105057
+AODV Recv		: 488350
+Data Sent		: 32775
+Data Recv		: 18080
+Router Drop		: 15397
+Delivery Ratio		: 0.55163996948894 
+Norm. Routing Load   : 5.81067477876106
+
+p600
+Average Throughput[kbps] = 103.46		 StartTime=10.29	StopTime=900.00
+AODV Sent		: 57831
+AODV Recv		: 248174
+Data Sent		: 32889
+Data Recv		: 22473
+Router Drop		: 11158
+Delivery Ratio		: 0.683298367235246 
+Norm. Routing Load   : 2.57335469229742 
+
+p900
+Average Throughput[kbps] = 14.80		 StartTime=10.29	StopTime=899.80
+AODV Recv		: 177150
+Data Sent		: 32867
+Data Recv		: 3215
+Router Drop		: 29330
+Delivery Ratio		: 0.0978184805427937 
+Norm. Routing Load   : 13.5654743390358 
+

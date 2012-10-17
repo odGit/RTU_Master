@@ -1,0 +1,45 @@
+\documentclass[a4paper,11pt]{book}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{latvian}
+
+\usepackage{fixlatvian}
+
+
+
+\begin{document}
+
+\author{Mārtiņš Liberts}
+\title{Latviešu valoda TeX dokumentā}
+
+\date{\today}
+
+\maketitle
+
+\section*{abstract}
+
+Latviešu valodas izmantošana TeX dokumentos ir iespējama.
+
+\textit{Atslēgas vārdi:} TeX, XeTeX, XeLaTex, polyglossia, FixLatvian, latviešu valoda
+
+%\end{abstract}
+
+\section*{TeX latviešu valodā}
+
+\subsection{Linux vide}
+
+Lai rakstītu TeX dokumentu latviešu valodā, es izmantoju:
+\begin{enumerate}
+ \item TeX Live 2009. TeX Live ir alternatīva populārākajam TeX dzinim MiKTeX. Es izvēlējos TeX Live, jo tas darbojas gan Windows, gan Linux vidēs. Attiecīgi varu izmantot viena sistēmu visās operētājsistēmās, kuras es lietoju.
+ \item \textit{texlive-lang-latvian} -- TeX Live latviešu valodas papildinājums.
+ \item XeTeX jeb XeLaTex. Es īsti vēl neesmu saprastis atšķirību starp šiem diviem. Iespējams tas ir viens un tas pats. Galvenā priekšrocība, salīdzinot ar LaTeX vai pdfLaTeX, ir tāda, ka XeTeXam ir unicode atbalsts un tas spēj izmantot jebkuru operētājsistēmas fontu. XeTeX lietošana arī ir atslēga, latviešu valodas lietošanai TeX dokumntos.
+ \item Pakotni \textit{polyglossia} -- \textit{polyglossia} ir alternatīva \textit{babel} pakai. Atšķirībā no \textit{babel}, \textit{polyglossia} atbalsta latviešu valodu.
+ \item Pakotni \textit{FixLatvian} -- papildus uzlabojumi latviešu valodai TeX dokumentos, piemēram punkts aiz ``1'' virsrakstā.
+ \item Kile -- viens no labākajiem TeX editoriem Linuxam.
+\end{enumerate}
+
+\subsection{Windows vide}
+
+Rīt pamēģināšu līdzīgā veidā iedarbināt latviešu valodu arī Windows vidē.
+
+\end{document}

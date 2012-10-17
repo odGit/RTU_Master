@@ -1,0 +1,21 @@
+#---------------------------------------------
+#ns-allinone-2.XX/ns2-xx/indep-utils/cmu-scen-gen/
+#---------------------------------------------
+ns cbrgen.tcl -type cbr -nn 50 -seed 0.7 -mc 10 -rate 4.0 >trafCBR.traff
+#---------------------------------------------
+#ns-allinone-2.XX/ns2-xx/indep-utils/cmu-scen-gen/setdest/
+#---------------------------------------------
+./setdest -v 1 -n 51 -p 0.0 -s 1 -M 5.0 -t 900.0 -x 1500 -y 300 >scen_max5_p0.scen
+
+Arguments ./setdest [-v version of setdest; 1 for original 1999 CMU version or 2 for modified 2003 U.Michigan version ] [-n num_of_nodes] [-p pausetime] [-s speed type setting 1 (uniform) or 2 (normal)] [-M max speed] [-t simtime] [-x maxx] [-y maxy] > [outdir/movement-file]
+
+
+
+#---------------------------------------
+#  trace file analysis
+#----------------------------------------
+./delaycal trAodv80211.tr wuo.dat wu1.dat
+
+gawk -f athroughput.awk trAodv80211.tr
+
+./analyze.pl trAodv80211.tr

@@ -1,0 +1,80 @@
+.pl output80211_max5_p0.tr 
+AODV Sent		: 116933
+AODV Recv		: 581074
+Data Sent		: 32897
+Data Recv		: 26142
+Router Drop		: 9570
+Delivery Ratio		: 0.794662127245645 
+Average Throughput[kbps] = 120.35		 StartTime=10.29	StopTime=899.99
+Number of entries read: 61773313
+Number of entries sent: 674036
+Number of entries received:  1661677
+average delay of entries :  27.986231
+variance of  delay is :  16877.120568
+
+.pl output80211_max5_p30.tr 
+AODV Sent		: 145323
+AODV Recv		: 655656
+Data Sent		: 32854
+Data Recv		: 24991
+Router Drop		: 9880
+Delivery Ratio		: 0.760668411761125 
+Average Throughput[kbps] = 115.05		 StartTime=10.29	StopTime=899.99
+
+
+.pl output80211_max5_p45.tr 
+AODV Sent		: 181484
+AODV Recv		: 836144
+Data Sent		: 32964
+Data Recv		: 21304
+Router Drop		: 14614
+Delivery Ratio		: 0.646280791166121 
+Average Throughput[kbps] = 98.08		 StartTime=10.29	StopTime=899.96
+
+
+output80211_max5_p60.tr 
+AODV Sent		: 91631
+AODV Recv		: 452248
+Data Sent		: 32958
+Data Recv		: 25453
+Router Drop		: 8759
+Delivery Ratio		: 0.772285939680806 
+Average Throughput[kbps] = 117.19		 StartTime=10.29	StopTime=899.95
+
+.pl output80211_max5_p120.tr 
+AODV Sent		: 91891
+AODV Recv		: 432084
+Data Sent		: 32964
+Data Recv		: 18391
+Router Drop		: 15481
+Delivery Ratio		: 0.557911661206164 
+Average Throughput[kbps] = 84.68		 StartTime=10.29	StopTime=899.88
+
+output80211_max5_p300.tr 
+AODV Sent		: 69813
+AODV Recv		: 314350
+Data Sent		: 32869
+Data Recv		: 24549
+Router Drop		: 9155
+Delivery Ratio		: 0.746873954181752 
+Average Throughput[kbps] = 113.02		 StartTime=10.29	StopTime=899.99
+
+.pl output80211_max5_p600.tr 
+AODV Sent		: 58095
+AODV Recv		: 269860
+Data Sent		: 32846
+Data Recv		: 15235
+Router Drop		: 18149
+Delivery Ratio		: 0.46383121232418 
+Average Throughput[kbps] = 70.14		 StartTime=10.29	StopTime=899.97
+
+
+.pl output80211_max5_p900.tr 
+AODV Sent		: 45843
+AODV Recv		: 189156
+Data Sent		: 32787
+Data Recv		: 6525
+Router Drop		: 25974
+Delivery Ratio		: 0.199011803458688 
+Average Throughput[kbps] = 30.04		 StartTime=10.29	StopTime=899.94
+

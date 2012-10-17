@@ -1,0 +1,91 @@
+e.pl output80211_max15_p0.tr 
+AODV Sent		: 232528
+AODV Recv		: 1182450
+Data Sent		: 32868
+Data Recv		: 24351
+Router Drop		: 12845
+Delivery Ratio		: 0.740872581234027 
+Norm. Routing Load   : 9.54901236088867 
+Average Throughput[kbps] = 112.11		 StartTime=10.29	StopTime=899.99
+
+e.pl output80211_max15_p30.tr 
+AODV Sent		: 216174
+AODV Recv		: 1064788
+Data Sent		: 32937
+Data Recv		: 25564
+Router Drop		: 11657
+Delivery Ratio		: 0.77614840452986 
+Norm. Routing Load   : 8.45618838992333 
+Average Throughput[kbps] = 117.69		 StartTime=10.29	StopTime=899.99
+
+
+e.pl output80211_max15_p45.tr 
+AODV Sent		: 152708
+AODV Recv		: 692572
+Data Sent		: 32876
+Data Recv		: 25287
+Router Drop		: 10836
+Delivery Ratio		: 0.769162915196496 
+Norm. Routing Load   : 6.03899236761973 
+Average Throughput[kbps] = 116.42		 StartTime=10.29	StopTime=899.95
+
+e.pl output80211_max15_p60.tr 
+AODV Sent		: 155549
+AODV Recv		: 698602
+Data Sent		: 32882
+Data Recv		: 24481
+Router Drop		: 11508
+Delivery Ratio		: 0.744510674533179 
+Norm. Routing Load   : 6.35386626363302 
+Average Throughput[kbps] = 112.71		 StartTime=10.29	StopTime=899.99
+
+e.pl output80211_max15_p120.tr 
+AODV Sent		: 98579
+AODV Recv		: 437422
+Data Sent		: 32963
+Data Recv		: 19810
+Router Drop		: 14552
+Delivery Ratio		: 0.600976852834997 
+Norm. Routing Load   : 4.97622412922766 
+Average Throughput[kbps] = 91.20		 StartTime=10.29	StopTime=899.97
+
+e.pl output80211_max15_p300.tr 
+AODV Sent		: 91428
+AODV Recv		: 373062
+Data Sent		: 32810
+Data Recv		: 13612
+Router Drop		: 19885
+Delivery Ratio		: 0.414873514172508 
+Norm. Routing Load   : 6.71672054069938 
+Average Throughput[kbps] = 62.67		 StartTime=10.29	StopTime=899.99
+
+e.pl output80211_max15_p450.tr 
+AODV Sent		: 68031
+AODV Recv		: 295240
+Data Sent		: 32858
+Data Recv		: 7274
+Router Drop		: 25845
+Delivery Ratio		: 0.221376833647818 
+Average Throughput[kbps] = 33.49		 StartTime=10.29	StopTime=899.92
+
+e.pl output80211_max15_p600.tr 
+AODV Sent		: 72181
+AODV Recv		: 306158
+Data Sent		: 32853
+Data Recv		: 25541
+Router Drop		: 7817
+Delivery Ratio		: 0.777432806745198 
+Norm. Routing Load   : 2.8260835519361
+Average Throughput[kbps] = 117.59		 StartTime=10.29	StopTime=899.99
+
+e.pl output80211_max15_p900.tr 
+AODV Sent		: 33604
+AODV Recv		: 141786
+Data Sent		: 32891
+Data Recv		: 6511
+Router Drop		: 26142
+Delivery Ratio		: 0.197956887902466 
+Norm. Routing Load   : 5.16111196436799 
+Norm. Routing Load   : 9.35262579048666
+Average Throughput[kbps] = 29.98		 StartTime=10.29	StopTime=899.85
+

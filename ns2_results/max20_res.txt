@@ -1,0 +1,90 @@
+athroughput.awk output80211_max20_p0.tr 
+Average Throughput[kbps] = 114.54		 StartTime=10.29	StopTime=899.98
+AODV Sent		: 165701
+AODV Recv		: 782272
+Data Sent		: 32921
+Data Recv		: 24879
+Router Drop		: 11765
+Delivery Ratio		: 0.755718234561526 
+Norm. Routing Load   : 6.66027573455525 
+
+athroughput.awk output80211_max20_p30.tr 
+Average Throughput[kbps] = 102.12		 StartTime=10.29	StopTime=899.93
+AODV Sent		: 193023
+AODV Recv		: 909646
+Data Sent		: 32901
+Data Recv		: 22180
+Router Drop		: 14092
+Delivery Ratio		: 0.674143643050363 
+Norm. Routing Load   : 8.70256988277728 
+
+athroughput.awk output80211_max20_p45.tr 
+Average Throughput[kbps] = 92.82		 StartTime=10.29	StopTime=899.96
+AODV Sent		: 185520
+AODV Recv		: 840164
+Data Sent		: 32880
+Data Recv		: 20161
+Router Drop		: 15145
+Delivery Ratio		: 0.613169099756691 
+Norm. Routing Load   : 9.20192450771291 
+
+athroughput.awk output80211_max20_p60.tr 
+Average Throughput[kbps] = 97.19		 StartTime=10.29	StopTime=899.96
+AODV Sent		: 189268
+AODV Recv		: 928302
+Data Sent		: 32903
+Data Recv		: 21111
+Router Drop		: 14352
+Delivery Ratio		: 0.641613226757438 
+Norm. Routing Load   : 8.9653735019658
+
+athroughput.awk output80211_max20_p120.tr 
+Average Throughput[kbps] = 91.83		 StartTime=10.29	StopTime=899.93
+AODV Sent		: 122785
+AODV Recv		: 531632
+Data Sent		: 32942
+Data Recv		: 19945
+Router Drop		: 14601
+Delivery Ratio		: 0.605458077833768 
+Norm. Routing Load   : 6.15617949360742 
+
+
+athroughput.awk output80211_max20_p300.tr 
+Average Throughput[kbps] = 70.80		 StartTime=10.29	StopTime=899.92
+AODV Sent		: 90709
+AODV Recv		: 374220
+Data Sent		: 32898
+Data Recv		: 15377
+Router Drop		: 17808
+Delivery Ratio		: 0.467414432488297 
+Norm. Routing Load   : 5.8990050074787 
+
+athroughput.awk output80211_max20_p450.tr 
+Average Throughput[kbps] = 99.76		 StartTime=10.29	StopTime=899.99
+AODV Sent		: 84243
+AODV Recv		: 346990
+Data Sent		: 32883
+Data Recv		: 21669
+Router Drop		: 12491
+Delivery Ratio		: 0.658972721467019 
+Norm. Routing Load   : 3.88771978402326 
+
+athroughput.awk output80211_max20_p600.tr 
+Average Throughput[kbps] = 102.59		 StartTime=10.29	StopTime=899.95
+AODV Sent		: 55175
+AODV Recv		: 274980
+Data Sent		: 32835
+Data Recv		: 22282
+Router Drop		: 11216
+Delivery Ratio		: 0.678605146946855 
+Norm. Routing Load   : 2.47621398438201 
+
+athroughput.awk output80211_max20_p900.tr 
+Average Throughput[kbps] = 150.29		 StartTime=10.29	StopTime=899.93
+AODV Sent		: 14920
+AODV Recv		: 57624
+Data Sent		: 32894
+Data Recv		: 32643
+Router Drop		: 779
+Delivery Ratio		: 0.992369429075211 
+Norm. Routing Load   : 0.457065833409919 

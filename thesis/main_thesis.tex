@@ -1,0 +1,275 @@
+\documentclass[12pt, a4paper, oneside, openright]{book}
+\usepackage[vcentering, dvips, a4paper, top=2cm, bottom=2cm, left=3cm, right=1.75cm]{geometry}
+\usepackage{hyperref}%for cross references
+\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{latvian}
+\usepackage{fixlatvian}
+
+\usepackage{setspace}
+  \onehalfspacing % to have 1.5 space between lines
+
+\usepackage{indentfirst}
+\usepackage[nonumberlist]{glossaries}
+\usepackage{amsfonts} %includes a list of mathematical symbols and styles. Useful if you are using equations a lot
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{psfrag} %I use eps files for my pictures, and with this package I can replace text in those images. This allows me to have the same font size and type in both images and text.
+%\usepackage{tipa}
+%\usepackage{textcomp}
+\usepackage{layout} %simple package, which prints an overview of all the margins on the page when you insert \layout.
+\usepackage{appendix} %allows more detailed control over appendicies.
+
+\usepackage[numbers, sort]{natbib}  %powerful extension for controlling your references.
+  \bibliographystyle{siam}
+
+\usepackage{parskip}
+\usepackage{fancyhdr} %this package allows control over the headers and footers for documents with class book. The use is non-trivial, but powerful results are possible.
+\usepackage{acronym}%for using acronym and building a list of acronym
+\usepackage{multirow}
+\usepackage{enumitem}
+  \setlist{topsep=0pt, parsep=0pt, itemsep=0pt}
+
+\usepackage{pdfpages} %to include PDF files
+
+
+% Redefine plain page style
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \fancyfoot[RO]{\thepage} %add LE for duplex
+
+}
+
+% Code for creating empty pages
+% No headers on empty pages before new chapter
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+    \hbox{}
+    \thispagestyle{plain}
+    \newpage
+    \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother \clearpage{\pagestyle{plain}\cleardoublepage}
+
+% Define pagestyle
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\chaptermark}[1]{\markboth{ \emph{#1}}{}}
+\fancyhead[LO]{\leftmark}
+%\fancyhead[RE]{\leftmark} %required for duplex
+\fancyfoot[RO]{\thepage} %add LE for duplex
+
+%For titlepage
+\newcommand{\HRule}{\rule{\linewidth}{0.3mm}}
+
+
+% This is all for formatting and making the Table of Contents according to
+% spec. Don't play with it.
+\makeatletter
+\renewcommand*\l@chapter[2]{%
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip 1.0em \@plus\p@
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode \bfseries
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      #1\nobreak\normalfont\leaders\hbox{$\m@th
+        \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
+        mu$}\hfill\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+      \penalty\@highpenalty
+    \endgroup
+  \fi}
+\makeatother
+
+% TOC display levels: Chapter, Section, subsection
+\setcounter{tocdepth}{2}
+
+
+%Create Glossary
+\makeglossaries
+\loadglsentries{burti}
+
+
+%To remove the word ``Chapter'' before Chapter #
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]{\bf\huge}{\thechapter}{2pc}{}
+
+%To dedicate the work to someone
+\newenvironment{dedication}
+{
+   \cleardoublepage
+   \thispagestyle{empty}
+   \vspace*{\stretch{1}}
+   \hfill\begin{minipage}[t]{0.66\textwidth}
+   \raggedright
+}%
+{
+   \end{minipage}
+   \vspace*{\stretch{3}}
+   \clearpage
+}
+
+%fixing \headhight error
+\setlength{\headheight}{15pt}
+
+%FOR MATLAB CODE LISTING
+\usepackage{listings}
+\usepackage[usenames,dvipsnames]{color}
+% This is the color used for MATLAB comments below
+\definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0}
+
+% For faster processing, load Matlab syntax for listings
+\lstloadlanguages{Matlab}%
+\lstset{language=Matlab,                        % Use MATLAB
+        frame=single,                           % Single frame around code
+        basicstyle=\small\ttfamily,             % Use small true type font
+        keywordstyle=[1]\color{Blue}\bf,        % MATLAB functions bold and blue
+        keywordstyle=[2]\color{Purple},         % MATLAB function arguments purple
+        keywordstyle=[3]\color{Blue}\underbar,  % User functions underlined and blue
+        identifierstyle=,                       % Nothing special about identifiers
+                                                % Comments small dark green courier
+        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{MyDarkGreen}\small,
+        stringstyle=\color{Purple},             % Strings are purple
+        showstringspaces=false,                 % Don't put marks in string spaces
+        tabsize=5,                              % 5 spaces per tab
+        %
+        %%% Put standard MATLAB functions not included in the default
+        %%% language here
+        morekeywords={xlim,ylim,var,alpha,factorial,poissrnd,normpdf,normcdf},
+        %
+        %%% Put MATLAB function parameters here
+        morekeywords=[2]{on, off, interp},
+        %
+        %%% Put user defined functions here
+        morekeywords=[3]{FindESS, homework_example},
+        %
+        morecomment=[l][\color{Blue}]{...},     % Line continuation (...) like blue comment
+        numbers=left,                           % Line numbers on left
+        firstnumber=1,                          % Line numbers start with line 1
+        numberstyle=\tiny\color{Blue},          % Line numbers are blue
+        stepnumber=5                            % Line numbers go in steps of 5
+        }
+% Includes a MATLAB script.
+% The first parameter is the label, which also is the name of the script
+%   without the .m.
+% The second parameter is the optional caption.
+\newcommand{\matlabscript}[2]
+  {\begin{itemize}\item[]\lstinputlisting[caption=#2,label=#1]{#1.m}\end{itemize}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%FOR MATLAB CODE%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Here begin my document%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\frontmatter %page numbering in LATIN LETTERS
+\pagenumbering{arabic}
+\include{0titlepage}
+%DEDICATION%%
+\begin{dedication}
+\textit{Veltīts\\ Anatolijai un Sergejam}
+\end{dedication}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+%%NOVERTEJUMA LAPPA%%
+\phantomsection
+\addcontentsline{toc}{chapter}{Maģistra darba novērtējuma lapa}
+\includepdfset{pages=-,pagecommand=\thispagestyle{empty}}
+\includepdf{./pdf/novert.pdf}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+%%ORTUS%%
+\phantomsection
+\addcontentsline{toc}{chapter}{Studiju noslēguma darba autora apliecinājums}
+\includepdfset{pages=-,pagecommand=\thispagestyle{empty}}
+\includepdf{./pdf/ortus1.pdf}
+
+
+%%ANNOTACIJAS%%
+  \include{0msc_anno_lv}
+  \include{0msc_anno_eng}
+%%SAISINAJUMU%%
+  \include{acronyms}
+
+
+% Remove parskip for toc
+\setlength{\parskip}{0ex plus 0.5ex minus 0.2ex}
+\phantomsection
+\addcontentsline{toc}{chapter}{Saturs}
+\tableofcontents
+\phantomsection
+\addcontentsline{toc}{chapter}{Attēlu saraksts}
+\listoffigures
+
+% A style of paragraph formatting, i.e. no indents.
+\setlength{\parindent}{7mm}
+% \setlength{\parskip}{1cm plus 4mm minus 3mm}
+
+
+%Main part of the document
+\mainmatter
+\fontsize{12bp}{14bp}
+\setcounter{page}{13}
+%Adjustments headers
+\fancyhead[LO]{\emph{Nodaļa \thechapter}:\leftmark}
+\include{1ievads}
+\include{2bezTikli}
+\include{3teor}
+\include{4z_mobility}
+\include{5z_prot}
+\include{6msc_sim}
+\include{7msc_conclusion}
+
+
+%%%%%Glossary%%
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Notācija}
+\printglossaries
+
+%%%%%BIBLIOGRAPHY%%
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Literatūras saraksts}
+\bibliography{biblio.bib}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+%%%%%APPENDICIES%%
+\appendix
+% \noappendicestocpagenum
+\addappheadtotoc
+
+%Adjustments headers
+\pagestyle{fancy}
+\fancyhead[LO]{\emph{Pielikumi}}
+\renewcommand{\headrulewidth}{0.5pt}
+\appendix
+\renewcommand\thesection{Pielikums \Alph{section}}
+\section{}\label{appen:matlabSPBER}
+\matlabscript{./code/BER_routing}{}
+\clearpage{\pagestyle{empty}}
+\section{}\label{appen:matlabBERdensity}
+\matlabscript{./code/BER_Pt_density}{}
+\clearpage{\pagestyle{empty}}
+\section{}\label{appen:NETtempl}
+\lstinputlisting[language=tcl]{./code/ns2/stAODV.tcl}
+%
+% \section{}\label{appen:MOBaodv}
+% \lstinputlisting[language=tcl]{mobAODV.tcl}
+%
+% \section{}\label{appen:STdsr}
+% \lstinputlisting[language=tcl]{stDSR.tcl}
+%
+% \section{}\label{appen:MOBdsr}
+% \lstinputlisting[language=tcl]{mobDSR.tcl}
+%
+% \section{}\label{appen:STolsr}
+% \lstinputlisting[language=tcl]{stOLSR.tcl}
+%
+% \section{}\label{appen:MOBolsr}
+% \lstinputlisting[language=tcl]{mobOLSR.tcl}
+
+\end{document}

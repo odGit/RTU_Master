@@ -1,0 +1,61 @@
+p0
+Number of entries read: 75749151
+Number of entries sent: 760748
+Number of entries received:  1916794
+average delay of entries :  17.354478
+variance of  delay is :  17303.448043
+
+p30
+Number of entries read: 84676972
+Number of entries sent: 800273
+Number of entries received:  2052927
+average delay of entries :  21.829388
+variance of  delay is :  14811.817959
+
+p60
+Number of entries read: 81081438
+Number of entries sent: 811402
+Number of entries received:  2025413
+average delay of entries :  4.180406
+variance of  delay is :  15698.958157
+p90
+Number of entries read: 89019515
+Number of entries sent: 841936
+Number of entries received:  2150031
+average delay of entries :  13.082088
+variance of  delay is :  13797.401074
+
+p120
+Number of entries read: 58248653
+Number of entries sent: 666835
+Number of entries received:  1616146
+average delay of entries :  26.304710
+variance of  delay is :  19078.323562
+
+p300
+Number of entries read: 44920352
+Number of entries sent: 552005
+Number of entries received:  1326913
+average delay of entries :  26.716284
+variance of  delay is :  14887.143477
+
+p450
+Number of entries read: 48612906
+Number of entries sent: 664758
+Number of entries received:  1497945
+average delay of entries :  -11.344534
+variance of  delay is :  16367.977563
+
+p600
+Number of entries read: 31256624
+Number of entries sent: 366309
+Number of entries received:  912400
+average delay of entries :  -5.407344
+variance of  delay is :  20459.154175
+
+p900
+Number of entries read: 32368246
+Number of entries sent: 660919
+Number of entries received:  1375804
+average delay of entries :  18.780997
+variance of  delay is :  24969.661255
