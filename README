@@ -1,4 +1,5 @@
-This is my master thesis, written in Latvian(latviešu valoda) for Riga's Technical University(Rīgas Tehniskā Universitāte, RTU). Writen in using Latex, build with XeLatex.
+This is my master thesis, written in Latvian(latviešu valoda) for Riga's Technical University(Rīgas Tehniskā Universitāte, RTU). Thesis title "Impact of Mobility on QoS in Sensor Networks"(lat.val "Mobilitātes ietekme uz pakalpojuma kvalitāti sensoru tīklos"). Writen in using Latex, build with XeLatex.
+
 It has following structure:
  - latex_packages:
     --fixlatvian (project homepage: http://code.google.com/p/fixlatvian/ )
