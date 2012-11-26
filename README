@@ -1,5 +1,7 @@
 This is my master thesis, written in Latvian(latviešu valoda) for Riga's Technical University(Rīgas Tehniskā Universitāte, RTU). Thesis title "Impact of Mobility on QoS in Sensor Networks"(lat.val "Mobilitātes ietekme uz pakalpojuma kvalitāti sensoru tīklos"). Writen in using Latex, build with XeLatex.
 
+The PDF version of the thesis: http://www.scribd.com/collections/3824213/RTU-thesis
+
 It has following structure:
  - latex_packages:
     --fixlatvian (project homepage: http://code.google.com/p/fixlatvian/ )
@@ -17,7 +19,7 @@ It has following structure:
  -thesis:
     --code 
     --graph
-    --pdf (http://www.scribd.com/doc/105689587/Mobilit%C4%81tes-ietekme-uz-pakalpojuma-kvalit%C4%81ti-sensoru-t%C4%ABklos)
+    --pdf
   This folder contains my master thesis and all of the related files. To build PDF in latex should be used main_thesis.tex file with !!!!XeLatex !!!! 
 
 Par LaTeX latviskošanu lasit šeit 
