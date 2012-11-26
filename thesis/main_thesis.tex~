@@ -186,7 +186,7 @@
 \phantomsection
 \addcontentsline{toc}{chapter}{Studiju noslēguma darba autora apliecinājums}
 \includepdfset{pages=-,pagecommand=\thispagestyle{empty}}
-\includepdf{./pdf/ortus.pdf}
+\includepdf{./pdf/ortus1.pdf}
 
 
 %%ANNOTACIJAS%%
