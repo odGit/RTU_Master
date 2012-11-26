@@ -17,5 +17,13 @@ It has following structure:
  -thesis:
     --code 
     --graph
-    --pdf
-  This folder contains my master thesis and all of the related files. To build PDF in latex should be used main_thesis.tex file with !!!!XeLatex !!!!
+    --pdf (http://www.scribd.com/doc/105689587/Mobilit%C4%81tes-ietekme-uz-pakalpojuma-kvalit%C4%81ti-sensoru-t%C4%ABklos)
+  This folder contains my master thesis and all of the related files. To build PDF in latex should be used main_thesis.tex file with !!!!XeLatex !!!! 
+
+Par LaTeX latviskošanu lasit šeit 
+http://home.lu.lv/~drikis/LaTeX-Latviski/LatvianInstall/Miktex-25/WinLV.html
+
+Good places to see information:
+http://ns-2.blogspot.dk/2006/03/exercise-simulate-ad-hoc-network.html
+http://www-lih.univ-lehavre.fr/~hogie/madhoc/
+http://ns2-master.blogspot.dk/
